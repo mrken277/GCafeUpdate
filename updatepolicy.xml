@@ -1,0 +1,14 @@
+<update><!--an empty condition means excutive always -->
+<!--command list: updater,kill,run,runwait,stopsvc,startsvc,copyfile-->
+    <action type="updater" value="serverupdater.exe" condition="serverupdater.exe"/>
+    <action type="kill" value="CafeConsole.exe" condition="cafe_console\CafeConsole.exe"/>
+    <action type="kill" value="CafeConsole.exe" condition="CafeServer.exe;FSFileSytem.dll"/>
+    <action type="kill" value="CafeSyncConsole.exe" condition="cafe_syncconsole\CafeSyncConsole.exe"/>
+    <action type="kill" value="CafeSyncConsole.exe" condition="CafeServer.exe;FSFileSytem.dll"/>
+    <action type="copyfile" value="" condition=""/>
+    <action type="runwait" value="cmd.exe /c cleanfiles.bat" condition=""/>
+    <action type="runwait" value="cmd.exe /c set_recovery_policy.bat" condition=""/>
+    <action type="runwait" value="Update_Domain.exe" condition=""/>
+    <action type="kill" value="CafeServer.exe" condition="CafeServer.exe;FSFileSytem.dll;FSServerCafe.dll"/>
+    <!--action type="run" value="CafeServer.exe" condition="CafeServer.exe;FSFileSytem.dll;FSServerCafe.dll"/-->
+</update>

@@ -1,0 +1,4 @@
+<config>
+<!--cafe server address and ports, leave 0.0.0.0 to allow connection from all network adapters-->
+<server address="0.0.0.0" pub_port="22"/>
+</config>
